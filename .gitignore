@@ -1,3 +1,18 @@
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea
+target
+*/.settings
+
+.idea/
+/*/.idea/
+*.target/
+/*/target
+.settings
+/*/.settings
+
 # Compiled class file
 *.class
 
