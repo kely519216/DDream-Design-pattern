@@ -1,9 +1,12 @@
 package com.ddream;
 
 import com.ddream.model.Animal;
-import com.ddream.patterm.AnimalMethodFactory;
-import com.ddream.patterm.AnimalStaticFactory;
-import com.ddream.patterm.CatFactory;
+import com.ddream.model.Cat;
+import com.ddream.model.Student;
+import com.ddream.pattern.AnimalMethodFactory;
+import com.ddream.pattern.AnimalStaticFactory;
+import com.ddream.pattern.CatFactory;
+import com.ddream.pattern.CatSinglePattern;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -35,4 +38,21 @@ class FactoryPattermApplicationTests {
         animal.run();
     }
 
+    /**
+     * 单例模式 饿汉模式
+     */
+    @Test
+    void testSinglePattern() {
+        Cat cat = CatSinglePattern.getSingleCat();
+        cat.run();
+    }
+
+    /**
+     * 单例模式 懒汉
+     */
+    @Test
+    void testLazySinglePattern() {
+        Student student = Student.getSingleStudent();
+        student.run();
+    }
 }

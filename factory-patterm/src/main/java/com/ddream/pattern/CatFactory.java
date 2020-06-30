@@ -1,4 +1,4 @@
-package com.ddream.patterm;
+package com.ddream.pattern;
 
 import com.ddream.model.Animal;
 import com.ddream.model.Cat;
