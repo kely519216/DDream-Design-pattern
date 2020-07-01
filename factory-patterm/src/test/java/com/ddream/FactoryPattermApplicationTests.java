@@ -1,12 +1,7 @@
 package com.ddream;
 
-import com.ddream.model.Animal;
-import com.ddream.model.Cat;
-import com.ddream.model.Student;
-import com.ddream.pattern.AnimalMethodFactory;
-import com.ddream.pattern.AnimalStaticFactory;
-import com.ddream.pattern.CatFactory;
-import com.ddream.pattern.CatSinglePattern;
+import com.ddream.model.*;
+import com.ddream.pattern.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -36,6 +31,16 @@ class FactoryPattermApplicationTests {
         AnimalMethodFactory factory = new CatFactory();
         Animal animal = factory.createAnimal();
         animal.run();
+    }
+
+    /**抽象工厂*/
+    @Test
+    void testAbstractMethodFactory(){
+        CarMethodFactory factory = new WbFactory();
+        CarBody carBody = factory.createCarBody();
+        Tire tire = factory.createTire();
+        carBody.build();
+        tire.build();
     }
 
     /**
