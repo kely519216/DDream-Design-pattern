@@ -23,7 +23,7 @@
     </properties>
 
     <modules>
-        <module>factory-patterm</module>
+        <module>factory_patterm</module>
     </modules>
 
     <dependencies>
