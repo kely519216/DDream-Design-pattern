@@ -24,6 +24,7 @@
 
     <modules>
         <module>factory_patterm</module>
+        <module>builder_patterm</module>
     </modules>
 
     <dependencies>
